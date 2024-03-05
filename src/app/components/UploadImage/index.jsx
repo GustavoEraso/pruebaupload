@@ -17,7 +17,7 @@ const UploadImage = () => {
       <CldUploadButton
         cloudName={process.env.CLOUDINARY_CLOUD_NAME}
         apiKey={process.env.CLOUDINARY_API_KEY}
-        uploadPreset="mu1ohw43"
+        uploadPreset="STI-preset"
         onSuccess={handleSuccess}
         onError={handleError}
       >
