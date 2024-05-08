@@ -1,0 +1,35 @@
+.section{
+    outline: 1px solid black;
+    width: 400px;
+    border-radius: 30px;
+    background-color: rgb(116, 173, 192);
+    padding: 10px;
+    animation: papa linear both;    
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+.section h2 {
+    font-size: xx-large;
+}
+
+.section p {
+    font-size:x-large ;
+}
+
+@keyframes papa {
+    0%{
+        opacity: 0;
+        translate: 0 100px;
+        scale: .4;
+    }
+    80%{
+        scale: 1.2;
+    }
+    100%{
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+    
+}

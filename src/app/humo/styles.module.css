@@ -1,0 +1,46 @@
+.img{
+    width: 300px;
+   
+}
+/* 
+.div{
+    background-image: url('./min.gif');
+} */
+
+.hum{
+    width: 600px;
+    animation: humo linear 4s infinite;
+
+}
+
+@keyframes humo {
+    0%{
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    30%{
+        opacity: .4;
+       
+        scale: .6;
+    }
+    50%{
+        opacity: .3;
+        scale: .9;
+    }
+    70%{
+        opacity: .4;
+        scale: .8;
+    }
+    80%{
+        transform: translateX(0);
+        opacity: .9;
+        scale: 1;
+    }
+
+    100%{
+        opacity: 0;
+        scale: .8;
+
+    }
+    
+}
