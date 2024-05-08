@@ -7,7 +7,7 @@ export default function Uruguay(){
   <title>Hello world</title>
   <meta
     property="og:image"
-    content="http://localhost:3000/api/og?imgurl=http://localhost:3000/api/og?imgurl=https://res.cloudinary.com/dzieat30x/image/upload/ar_1:1,c_fill,f_jpg,g_center,w_800/v1710410202/STI/sruqionjvfq5bdowmwgx.webp"
+    content="https://pruebaupload.vercel.app/api/og?imgurl=http://localhost:3000/api/og?imgurl=https://res.cloudinary.com/dzieat30x/image/upload/ar_1:1,c_fill,f_jpg,g_center,w_800/v1710410202/STI/sruqionjvfq5bdowmwgx.webp"
   />
 </head>
 
