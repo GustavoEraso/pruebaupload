@@ -17,7 +17,7 @@ import { headers } from "next/headers";
 
 
   
-return NextResponse.json({SERVER:API_KEY , navegador: apiKey, igual: apiKey === `Bearer ${API_KEY}`}) 
+return NextResponse.json({SERVER:API_KEY , navegador: apiKey,igual: apiKey === `Bearer ${API_KEY}`, headersList }) 
      
     
 }
