@@ -11,10 +11,8 @@ import { Darker_Grotesque } from 'next/font/google';
   
 
  
-//   const body = await request.body.json();
-//   const {apiKey} = body
-
-  const query = request.query
+  const body = await request.json();
+  const {apiKey} = body
 
    
     
@@ -24,8 +22,7 @@ import { Darker_Grotesque } from 'next/font/google';
 
 
   
-return NextResponse.json({body, query}) 
-// return NextResponse.json({SERVER:API_KEY , navegador: apiKey ,igualee: apiKey === API_KEY, }) 
+return NextResponse.json({SERVER:API_KEY , navegador: apiKey ,igualee: apiKey === API_KEY}) 
      
     
 }
