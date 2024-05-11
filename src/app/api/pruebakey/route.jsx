@@ -6,7 +6,7 @@ import { headers } from "next/headers";
 
   const API_KEY ='LA-CONTRASEÑA'
   
-  export  async function GET(request) {  
+  export  async function POST(request) {  
     const headersList = headers(request);
   const apiKey = headersList.get("Authorization");
    
