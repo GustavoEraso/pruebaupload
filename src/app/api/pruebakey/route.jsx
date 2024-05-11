@@ -14,7 +14,7 @@ import { Darker_Grotesque } from 'next/font/google';
   const body = await request.body.json();
   const {apiKey} = body
 
-  const query = request.query
+//   const query = request.query
 
    
     
