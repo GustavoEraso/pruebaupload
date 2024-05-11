@@ -11,6 +11,8 @@ import { Darker_Grotesque } from 'next/font/google';
     const llaves = [];
     const headersList = headers(request);
   const apiKey = headersList.get("Authorization");
+  const host = headersList.get('host')
+  const origin = headersList.get('origin')
   headersList.forEach((data)=> llaves.push(data))
   const entradas = []
 
@@ -25,7 +27,7 @@ import { Darker_Grotesque } from 'next/font/google';
 
 
   
-return NextResponse.json({SERVER:API_KEY , navegador: apiKey,igual: apiKey === `Bearer ${API_KEY}`, entradas }) 
+return NextResponse.json({SERVER:API_KEY , navegador: apiKey,igual: apiKey === `Bearer ${API_KEY}`, entradas , host, origin}) 
      
     
 }
