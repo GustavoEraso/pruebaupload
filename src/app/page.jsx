@@ -11,7 +11,6 @@ export default function Home() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer LA-CONTRASEÑA`
         },
         body: JSON.stringify({apiKey:'LA-CONTRASEÑA'})
       }).then((resp)=> resp.json()).then((data)=> console.log(data))

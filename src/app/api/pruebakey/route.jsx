@@ -8,17 +8,12 @@ import { Darker_Grotesque } from 'next/font/google';
   const API_KEY ='LA-CONTRASEÑA'
   
   export  async function POST(request) {  
-    const llaves = [];
-    const headersList = headers(request);
-  const apiKey = headersList.get("Authorization");
-  headersList.forEach((data)=> llaves.push(data))
-  const entradas = []
+  
 
-  for (const pair of headersList.entries()) {
-    entradas.push(`${pair[0]}: ${pair[1]}`);
-  }
+ 
+  const body = await request.json();
+  const {apiKey} = body
 
-  const body = await request.text();
    
     
 //   if (apiKey !== `Bearer ${API_KEY}`) {
@@ -27,7 +22,7 @@ import { Darker_Grotesque } from 'next/font/google';
 
 
   
-return NextResponse.json({SERVER:API_KEY , navegador: apiKey,igual: apiKey === `Bearer ${API_KEY}`, entradas , body}) 
+return NextResponse.json({SERVER:API_KEY , navegador: apiKey,igual: apiKey === API_KEY}) 
      
     
 }
