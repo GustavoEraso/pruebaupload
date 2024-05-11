@@ -2,7 +2,7 @@
 // import UploadImage from "@/components/UploadImage";
 import Link from "next/link";
 
-const API_KEY = process.env.MY_APIKEY
+const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 
 
 export default function Home() {
