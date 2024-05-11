@@ -11,7 +11,7 @@ import { Darker_Grotesque } from 'next/font/google';
     const llaves = [];
     const headersList = headers(request);
   const apiKey = headersList.get("Authorization");
-  headersList.forEach((key)=> llaves.push(key))
+  headersList.forEach((data)=> llaves.push(data))
    
     
 //   if (apiKey !== `Bearer ${API_KEY}`) {
