@@ -7,8 +7,8 @@ import { headers } from "next/headers";
   const API_KEY ='LA-CONTRASEÑA'
   
   export  async function GET() {  
-    const headersList = headers();
-    const apiKey = headersList.get("authorization");
+    const headersList = headers(request);
+  const apiKey = headersList.get("Authorization");
    
     
 //   if (apiKey !== `Bearer ${API_KEY}`) {
