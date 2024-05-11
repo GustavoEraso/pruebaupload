@@ -7,7 +7,7 @@ export default function Home() {
 
   const toSee = async () => {
     try {
-      const response = await fetch(`https://pruebaupload.vercel.app/api/pruebakey`, {
+      await fetch(`https://pruebaupload.vercel.app/api/pruebakey`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer LA-CONTRASEÑA`
