@@ -9,7 +9,7 @@ export default function Home() {
 
   const toSee = async () => {
     try {
-      await fetch(`https://pruebaupload.vercel.app/api/pruebakey`, {
+      await fetch(`https://pruebaupload.vercel.app/api/pruebakey?code=2020`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
