@@ -10,11 +10,11 @@ export default function Home() {
       await fetch(`https://pruebaupload.vercel.app/api/pruebakey`, {
         method: 'GET',
         headers: {
+          'Content-Type': 'application/json',
           'Authorization': `Bearer LA-CONTRASEÑA`
         }
       }).then((resp)=> resp.json()).then((data)=> console.log(data))
-      // const data = await response.json();
-      // console.log(data)
+     
 
     } catch (error) {
       console.error('There has been a problem with your fetch operation:', error);
