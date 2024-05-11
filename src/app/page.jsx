@@ -2,6 +2,8 @@
 // import UploadImage from "@/components/UploadImage";
 import Link from "next/link";
 
+const API_KEY = process.env.MY_APIKEY
+
 
 export default function Home() {
 
@@ -12,7 +14,7 @@ export default function Home() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({apiKey:'LA-CONTRASEÑA'})
+        body: JSON.stringify({apiKey: API_KEY})
       }).then((resp)=> resp.json()).then((data)=> console.log(data))
      
 
