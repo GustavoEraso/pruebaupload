@@ -5,7 +5,7 @@ import { Darker_Grotesque } from 'next/font/google';
 // import { API_KEY } from '../config';
 
 
-  const API_KEY ='LA-CONTRASEÑA'
+  const API_KEY = process.env.MY_APIKEY
   
   export  async function POST(request) {  
   
@@ -22,7 +22,7 @@ import { Darker_Grotesque } from 'next/font/google';
 
 
   
-return NextResponse.json({SERVER:API_KEY , navegador: apiKey,igual: apiKey === API_KEY}) 
+return NextResponse.json({SERVER:API_KEY , navegador: apiKey,igualee: apiKey === API_KEY}) 
      
     
 }
