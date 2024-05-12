@@ -15,7 +15,7 @@ export default function Home() {
 
     const headers = new Headers()
     headers.append("Content-Type","application/json")
-    headers.append('Authorization', process.env.NEXT_PUBLIC_MY_APIKEY )
+    headers.append('Authorization', API_KEY )
 
 
     console.log(headers)
