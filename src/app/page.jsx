@@ -10,14 +10,17 @@ export default function Home() {
 
   const toSee = async () => {
     console.log('la key',API_KEY)
+
+    const headers = JSON.stringify( {
+      'Content-Type': 'application/json',
+      'Authorization': API_KEY
+    })
+    console.log(headers)
     try {
       // await fetch(`http://localhost:3000/api/pruebakey`, {
         await fetch(`https://pruebaupload.vercel.app/api/pruebakey`, {
         method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': API_KEY
-        },
+        headers
         // body: JSON.stringify({apiKey: API_KEY})
       }).then((resp)=> resp.json()).then((data)=> console.log(data))
      
