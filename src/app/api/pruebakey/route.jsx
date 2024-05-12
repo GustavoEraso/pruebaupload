@@ -10,7 +10,7 @@ import { headers } from "next/headers";
   export  async function GET(request) { 
     
     const headersList = headers(request);
-    const aut = headersList.get('authorization')
+    const aut = headersList.get('Authorization')
     const entradas = []
 
     for (const pair of headersList.entries()) {
