@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 // let API_KEY
-const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY.slice(0,999)
+const API_KEY = process.env.MY_APIKEY
 
 
 
