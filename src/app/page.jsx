@@ -5,6 +5,7 @@ import Link from "next/link";
 const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 
 
+
 export default function Home() {
 
   const toSee = async () => {
@@ -14,7 +15,7 @@ export default function Home() {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': 'miramamasinmanos'
+          'Authorization': API_KEY
         },
         // body: JSON.stringify({apiKey: API_KEY})
       }).then((resp)=> resp.json()).then((data)=> console.log(data))
