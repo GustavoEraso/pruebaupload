@@ -9,6 +9,7 @@ const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 export default function Home() {
 
   const toSee = async () => {
+    console.log('la key',API_KEY)
     try {
       // await fetch(`http://localhost:3000/api/pruebakey`, {
         await fetch(`https://pruebaupload.vercel.app/api/pruebakey`, {
