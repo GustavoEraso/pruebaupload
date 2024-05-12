@@ -13,7 +13,8 @@ export default function Home() {
 
     const headers = new Headers()
     headers.append("Content-Type","application/json")
-    headers.append('Autorization', `${API_KEY}`)
+    // headers.append('Autorization', `${API_KEY}`)
+    headers.append('Autorization', 'putos')
 
     console.log(headers)
     try {
