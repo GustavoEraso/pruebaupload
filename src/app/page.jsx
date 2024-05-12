@@ -9,12 +9,14 @@ export default function Home() {
 
   const toSee = async () => {
     try {
-      await fetch(`https://pruebaupload.vercel.app/api/pruebakey?code=2020`, {
-        method: 'POST',
+      // await fetch(`http://localhost:3000/api/pruebakey`, {
+        await fetch(`https://pruebaupload.vercel.app/api/pruebakey`, {
+        method: 'GET',
         headers: {
           'Content-Type': 'application/json',
+          'Authorization': 'miramamasinmanos'
         },
-        body: JSON.stringify({apiKey: API_KEY})
+        // body: JSON.stringify({apiKey: API_KEY})
       }).then((resp)=> resp.json()).then((data)=> console.log(data))
      
 
