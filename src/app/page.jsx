@@ -6,10 +6,7 @@ let API_KEY
 // const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 
 
-const getApiKey = ()=>{
-  API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY  
-}
-getApiKey()
+
 
 export default function Home() {
 
@@ -18,7 +15,7 @@ export default function Home() {
 
     const headers = new Headers()
     headers.append("Content-Type","application/json")
-    headers.append('Authorization', API_KEY.toString())
+    headers.append('Authorization', process.env.NEXT_PUBLIC_MY_APIKEY )
 
 
     console.log(headers)
