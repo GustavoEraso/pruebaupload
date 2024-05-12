@@ -2,16 +2,16 @@
 // import UploadImage from "@/components/UploadImage";
 import Link from "next/link";
 
-// let API_KEY
+let API_KEY
+// const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 
 
-// const getApiKey = async (){
-  //   API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY  
-  // }
-  // getApiKey()
-  
-  export default function Home() {
-  const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
+const getApiKey = ()=>{
+  API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY  
+}
+getApiKey()
+
+export default function Home() {
 
   const toSee = async () => {
     console.log('la key',API_KEY)
