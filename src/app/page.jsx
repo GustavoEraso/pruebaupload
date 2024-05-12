@@ -1,4 +1,4 @@
-'use client'
+
 // import UploadImage from "@/components/UploadImage";
 import Link from "next/link";
 
