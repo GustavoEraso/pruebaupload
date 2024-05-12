@@ -11,10 +11,9 @@ export default function Home() {
   const toSee = async () => {
     console.log('la key',API_KEY)
 
-    const headers = JSON.stringify( {
-      'Content-Type': 'application/json',
-      'Authorization': API_KEY
-    })
+    const headers = new Headers()
+    headers.append('Autorization', `${API_KEY}`)
+
     console.log(headers)
     try {
       // await fetch(`http://localhost:3000/api/pruebakey`, {
