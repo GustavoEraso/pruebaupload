@@ -19,6 +19,8 @@ export default function Home() {
     // headers.append('Autorization', `${API_KEY}`)
     // headers.append('Authorization', 'putos')
 
+    console.log('desde headers', headers.get('Authorization'))
+
     console.log(headers)
     try {
       // await fetch(`http://localhost:3000/api/pruebakey`, {
