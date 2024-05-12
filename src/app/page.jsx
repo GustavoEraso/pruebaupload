@@ -13,7 +13,7 @@ export default function Home() {
 
     const headers = new Headers()
     headers.append("Content-Type","application/json")
-    headers.append('Authorization', API_KEY)
+    headers.append('Authorization', API_KEY.toString())
 
     console.log(headers)
     try {
@@ -21,7 +21,6 @@ export default function Home() {
         await fetch(`https://pruebaupload.vercel.app/api/pruebakey`, {
         method: 'GET',
         headers: headers
-        // body: JSON.stringify({apiKey: API_KEY})
       }).then((resp)=> resp.json()).then((data)=> console.log(data))
      
 
