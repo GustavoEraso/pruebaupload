@@ -2,7 +2,8 @@
 // import UploadImage from "@/components/UploadImage";
 import Link from "next/link";
 
-const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
+const API_KEY = 'lecheconcafe'
+// const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 
 
 
@@ -14,6 +15,7 @@ export default function Home() {
     const headers = new Headers()
     headers.append("Content-Type","application/json")
     headers.append('Authorization', API_KEY.toString())
+
 
     console.log(headers)
     try {
