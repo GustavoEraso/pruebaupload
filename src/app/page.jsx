@@ -2,12 +2,16 @@
 // import UploadImage from "@/components/UploadImage";
 import Link from "next/link";
 
-const API_KEY = 'lecheconcafe'
-// const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
+// let API_KEY
 
 
-
-export default function Home() {
+// const getApiKey = async (){
+  //   API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY  
+  // }
+  // getApiKey()
+  
+  export default function Home() {
+  const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 
   const toSee = async () => {
     console.log('la key',API_KEY)
