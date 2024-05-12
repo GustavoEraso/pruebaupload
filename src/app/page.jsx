@@ -9,17 +9,11 @@ const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 export default function Home() {
 
   const toSee = async () => {
-    console.log('la key', typeof API_KEY)
+    console.log('la key',API_KEY)
 
-    const headers = new Headers({
-      "Content-Type":"application/json",
-      'Authorization': 'putitos'
-    })
-    // headers.append("Content-Type","application/json")
-    // headers.append('Autorization', `${API_KEY}`)
-    // headers.append('Authorization', 'putos')
-
-    console.log('desde headers', headers.get('Authorization'))
+    const headers = new Headers()
+    headers.append("Content-Type","application/json")
+    headers.append('Authorization', API_KEY)
 
     console.log(headers)
     try {
