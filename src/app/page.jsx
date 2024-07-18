@@ -1,6 +1,7 @@
 'use client'
 // import UploadImage from "@/components/UploadImage";
 import Link from "next/link";
+import { useEffect } from "react";
 
 // let API_KEY
 const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
@@ -10,6 +11,28 @@ const API_KEY = process.env.NEXT_PUBLIC_MY_APIKEY
 
 export default function Home() {
 
+
+  useEffect(()=>{
+    const asyncFunction = async ()=>{
+      console.log('inicio')
+
+      
+      const getData = await fetch('http://localhost:3000/api/getdatauser',{
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ mensaje: 'Hola, servidor' })
+      })
+      console.log('termino')
+
+      console.log('la data', getData)
+
+      
+    }
+    asyncFunction()
+    
+  },[])
   const toSee = async () => {
     console.log('la key',API_KEY)
 
