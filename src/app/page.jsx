@@ -17,7 +17,7 @@ export default function Home() {
       console.log('inicio')
 
       
-      const getData = await fetch('http://localhost:3000/api/getdatauser',{
+      const getData = await fetch('https://pruebaupload.vercel.app/api/getdatauser',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
